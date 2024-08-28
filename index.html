@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional</title>
+</head>
+<body>
+    <script>
+let number1 = prompt("Enter the first number: ");
+let number2 = prompt("Enter the second number: "); 
+let operator = prompt("Enter +, -, *, / : ");
+
+let numbersOk = false;
+if (!isNaN(number1)) {
+  if (!isNaN(number2)) {
+    number1 = parseInt(number1);
+    number2 = parseInt(number2);
+    numbersOk = true;
+  }
+}
+if (numbersOk) {
+  let result;
+  if (operator == "+") {
+    alert(result = number1 + number2);
+  } 
+  else if (operator == "-") {
+    alert(result = number1 - number2);
+  } 
+  else if (operator == "*") {
+    alert(result = number1 * number2);
+  } 
+  else if (operator == "/") {
+    alert(result = number1 / number2);
+  } 
+  else {
+    alert("This operator is not allowed.");
+  }
+} 
+
+else {
+  alert("Number is invalid. Please try again");
+}
+
+
+
+    </script>
+</body>
+</html>
